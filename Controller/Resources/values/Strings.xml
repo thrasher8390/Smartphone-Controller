@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BluetoothSelect">Select Bluetooth Device</string>
+    <string name="Connect">Connect to device</string>
+    <string name="ApplicationName">Controller</string>
+</resources>
