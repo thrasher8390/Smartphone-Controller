@@ -24,6 +24,7 @@ namespace Controller.Modules.Bluetooth
 
             this.controllerBluetooth = new ControllerBluetooth(this);
 
+            controllerBluetooth.GetArrayAdapter();
             // Get our button from the layout resource,
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.ConnectToBluetooth);
