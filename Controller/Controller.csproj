@@ -55,6 +55,7 @@
     <Compile Include="Modules\Joystick\ControllerJoystick.cs" />
     <Compile Include="Modules\Main\ControllerMain.cs" />
     <Compile Include="Modules\Main\ActivityMain.cs" />
+    <Compile Include="Protocol\Command0.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -63,6 +64,9 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Bluetooth.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Joystick_Simple.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Controller.Modules.Bluetooth;
+using Controller.Modules.Joystick;
 
 namespace Controller.Modules.Main
 {
@@ -24,10 +25,18 @@ namespace Controller.Modules.Main
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            Button bluetooth = FindViewById<Button>(Resource.Id.btnBluetooth);
 
-            button.Click += delegate {
+            bluetooth.Click += delegate
+            {
                 StartActivity(typeof(ActivityBluetooth));
+            };
+            // Get our button from the layout resource,
+            // and attach an event to it
+            Button joystick = FindViewById<Button>(Resource.Id.btnJoystick);
+
+            joystick.Click += delegate {
+                StartActivity(typeof(ActivityJoystick));
             };
         }
     }
